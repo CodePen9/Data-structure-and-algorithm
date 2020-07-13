@@ -1,0 +1,24 @@
+package com.jiang;
+
+/*
+ * title: 求第n个斐波那契数
+ * 0 1 1 2 3 5 ....
+ */
+public class Main {
+	
+	//第一种算法
+	public static int fib(int n) {
+		if(n <= 1) {
+			return n;	
+		}
+		return fib(n - 1) + fib(n - 2);
+	}
+	
+	//第二种算法
+	
+	
+	public static void main(String[] args) {
+		//第一种算法在n比较大的时候会出现错误
+		System.out.println(fib(30)); 
+	}
+}
