@@ -2,13 +2,14 @@ package com.jiang;
 
 import com.jiang.TimeTool.Task;
 
-/*
- * title: ÇóµÚn¸öì³²¨ÄÇÆõÊı
- * 0 1 1 2 3 5 ....
+/**
+ * @title: ç¬¬nä¸ªæ–æ³¢é‚£å¥‘é¡¹
+ * @author JiangPeng
+ *
  */
 public class Main {
 	
-	//µÚÒ»ÖÖËã·¨
+	//ç¬¬ä¸€ç§ nè¾ƒå¤§çš„æ—¶å€™è¿ç®—å¾ˆæ…¢
 	public static int fib1(int n) {
 		if(n <= 1) {
 			return n;	
@@ -16,7 +17,7 @@ public class Main {
 		return fib1(n - 1) + fib1(n - 2);
 	}
 	
-	//µÚ¶şÖÖËã·¨
+	//ç¬¬äºŒç§
 	public static int fib2(int n) { 
 		int first = 0;
 		int second = 1;
@@ -29,21 +30,21 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
-		/*µÚÒ»ÖÖËã·¨ÔÚn±È½Ï´óµÄÊ±ºò»á³öÏÖ´íÎó
+		/*first
 		System.out.println(fib1(10));
 		
-		µÚ¶şÖÖ
+		second
 		System.out.println(fib2(1000));
 		*/
-		int n = 45;
+		int n = 4;	
 		TimeTool.check("fib1", new Task() {
 			public void execute() {
 				System.out.println(fib1(n));
 			}
 		});
-		TimeTool.check("fib1", new Task() {
+		TimeTool.check("fib2", new Task() {
 			public void execute() {
-				System.out.println(fib2(n));
+				System.out.println(fib2(1));
 			}
 		});
 		

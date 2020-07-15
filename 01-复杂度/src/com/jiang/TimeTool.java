@@ -12,15 +12,15 @@ public class TimeTool {
 	
 	public static void check(String title, Task task) {
 		if (task == null) return;
-		title = (title == null) ? "" : ("¡¾" + title + "¡¿");
+		title = (title == null) ? "" : ("ã€" + title + "ã€‘");
 		System.out.println(title);
-		System.out.println("¿ªÊ¼£º" + fmt.format(new Date()));
+		System.out.println("å¼€å§‹ï¼š" + fmt.format(new Date()));
 		long begin = System.currentTimeMillis();
 		task.execute();
 		long end = System.currentTimeMillis();
-		System.out.println("½áÊø£º" + fmt.format(new Date()));
+		System.out.println("ç»“æŸï¼š" + fmt.format(new Date()));
 		double delta = (end - begin) / 1000.0;
-		System.out.println("ºÄÊ±£º" + delta + "Ãë");
+		System.out.println("è€—æ—¶ï¼š" + delta + "ç§’");
 		System.out.println("-------------------------------------");
 	}
 }
